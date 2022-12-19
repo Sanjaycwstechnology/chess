@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const socket = require('socket.io');
 const mysql = require('mysql2');
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 
 var app = express();
 const server = http.createServer(app)
