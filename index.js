@@ -50,7 +50,8 @@ console.log(games);
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+	res.send('Chess is working');
+    // res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function (socket) {
