@@ -22,7 +22,7 @@ const pool = mysql.createPool({
     queueLimit: 0,
     timezone: '+05:30'
   });
-  */
+*/
 // //MYSQL Connection Local End
 
 // //MYSQL Connection Production
@@ -37,7 +37,7 @@ const pool = mysql.createPool({
     queueLimit: 0,
     timezone: '+05:30'
   });
-
+  
 // //MYSQL Connection Production End
 
 app.use(express.static(__dirname + "/"));
@@ -50,7 +50,7 @@ console.log(games);
 
 
 app.get('/', (req, res) => {
-	res.send('Chess is working');
+    res.send('Chess is working');
     // res.sendFile(__dirname + '/index.html');
 });
 

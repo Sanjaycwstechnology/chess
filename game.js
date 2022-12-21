@@ -2,8 +2,9 @@ game = new Chess();
 // var socket = io();
 
 
- // const url = 'localhost:8080/';
- const url = '//all-market-chess.herokuapp.com/';
+//  const url = 'localhost:3000/';
+//  const url = '//all-market-chess.herokuapp.com/';
+ const url = 'wss://chess-application.cwsbuild.com/';
 var connectionOptions =  {
 	"force new connection" : true,
 	"reconnectionAttempts": "Infinity",
@@ -103,8 +104,8 @@ var onDrop = function (source, target) {
         to: target,
         promotion: 'q' // NOTE: always promote to a queen for example simplicity
     });
-    // var gover = game.game_over();
-    var gover = true;
+    var gover = game.game_over();
+    // var gover = true;
     if (gover) {
         state.innerHTML = 'GAME OVER';
 		var total_wallet_amount = $('#total_wallet_amount').val();
